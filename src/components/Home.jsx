@@ -18,13 +18,13 @@ export default function Home(){
               </div>
             </div>
             <div className="big-profile-pic">
-              <img src="/Ellipse_10.png" alt="Avatar" />
+              <img src="/images/Ellipse_10.png" alt="Avatar" />
             </div>
           </header>
 
           <section className="skills">
             {[
-              {src:'/figma.png', label:'Figma'},
+              {src:'/images/figma.png', label:'Figma'},
               {src:'https://cdn.worldvectorlogo.com/logos/typescript.svg', label:'Typescript'},
               {src:'https://cdn.worldvectorlogo.com/logos/javascript-1.svg', label:'Javascript'},
               {src:'https://cdn.worldvectorlogo.com/logos/tailwindcss.svg', label:'Tailwindcss'},
@@ -47,7 +47,7 @@ export default function Home(){
 
         <div className="transition-1">
           <div className="transition-1-img">
-            <img src="/trans1.png" alt="Transition-1" />
+            <img src="/images/trans1.png" alt="Transition-1" />
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function Home(){
           <h2>About me</h2>
           <div className="about-card">
             <div className="about-card-content">
-              <img src="/mini-profilepic.png" alt="Profile" />
+              <img src="/images/mini-profilepic.png" alt="Profile" />
               <div>
                 <h3>Matilda Pallin</h3>
                 <p>M.Sc Student in Engineering in Interaction, Technology and Design at Umeå University</p>
@@ -73,12 +73,12 @@ export default function Home(){
               <span>matildapallin.se</span>
               <div className="icon-linkedin">
                 <a href="https://www.linkedin.com/in/matilda-pallin-a3b1b1266/" target="_blank" rel="noreferrer">
-                  <img src="/LinkedIn-Logo.wine.svg" alt="LinkedIn" />
+                  <img src="/images/LinkedIn-Logo.wine.svg" alt="LinkedIn" />
                 </a>
               </div>
               <div className="icon">
                 <a href="https://www.instagram.com/ditt-namn" target="_blank" rel="noreferrer">
-                  <img src="/Instagram_icon.png" alt="Instagram" />
+                  <img src="/images/Instagram_icon.png" alt="Instagram" />
                 </a>
               </div>
             </div>

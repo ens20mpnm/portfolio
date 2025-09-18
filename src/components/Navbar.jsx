@@ -6,7 +6,7 @@ export default function Navbar(){
     <nav className="navbar">
       <div className="nav-avatar">
         <NavLink to="/">
-          <img src="/mini-profilepic.png" alt="mini profile picture" />
+           <img src="/images/mini-profilepic.png" alt="miniProfile" />
         </NavLink>
       </div>
       <div className="nav-container">
