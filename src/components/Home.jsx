@@ -130,13 +130,13 @@ export default function Home(){
               <p>Helped Ibpsa Nordic create a website for their annual conference...</p>
             </div>
             <div className="recent-project-image">
-              <img src="/Device-MacbookPro.png" alt="Mockup" />
+              <img src="/images/Device-MacbookPro.png" alt="Mockup" />
             </div>
           </div>
         </section>
         <div className="transition-2">
           <div className="transition-2-img">
-            <img src="/trans2.png" alt="Transition" />
+            <img src="/images/trans2.png" alt="Transition" />
           </div>
         </div>
       </section>

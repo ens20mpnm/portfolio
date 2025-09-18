@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function Projects(){
   const items = [
-    {title:'BuildSim Nordic 2026', img:'/Device-MacbookPro.png', desc:'Helped Ibpsa Nordic...'},
-    {title:'Projekt', img:'/socmed.png', desc:'...'},
-    {title:'Renos AB', img:'/renos.png', desc:'...'},
-    {title:'KmCH.SE', img:'/kmch.png', desc:'...'},
-    {title:'ChargePlanner', img:'/chargePlanner.png', desc:'...'},
+    {title:'BuildSim Nordic 2026', img:'/images/Device-MacbookPro.png', desc:'Helped Ibpsa Nordic...'},
+    {title:'Projekt', img:'/images/socmed.png', desc:'...'},
+    {title:'Renos AB', img:'/images/renos.png', desc:'...'},
+    {title:'KmCH.SE', img:'/images/kmch.png', desc:'...'},
+    {title:'ChargePlanner', img:'/images/chargePlanner.png', desc:'...'},
   ]
 
   return (
