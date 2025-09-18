@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import NavBar from './components/NavBar.jsx'
+import Navbar from './components/Navbar.jsx'
 import Home from './components/Home.jsx'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
