@@ -70,7 +70,7 @@ export default function Home(){
       I thrive in dynamic environments and look forward to contributing with my knowledge, energy, and dedication.
             </p>
             <div className="about-card-socials">
-              <span>matildapallin.se</span>
+              <span>https://matildapallin.netlify.app</span>
               <div className="icon-linkedin">
                 <a href="https://www.linkedin.com/in/matilda-pallin-a3b1b1266/" target="_blank" rel="noreferrer">
                   <img src="/images/LinkedIn-Logo.wine.svg" alt="LinkedIn" />
