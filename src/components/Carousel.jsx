@@ -1,10 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react'
 
 const projects = [
-  { title: 'Renos AB', img:'/renos.png', desc: 'En interaktiv resa mot hållbar sjukvård' },
-  { title: 'Projektarbete', img:'/socmed.png', desc: 'App för att uppmuntra ...' },
-  { title: 'KmCH.SE', img:'/kmch.png', desc: 'Kort beskrivning av projekt 2' },
-  { title: 'ChargePlanner', img:'/chargePlanner.png', desc: 'information om projekt tre' },
+  { title: 'Renos AB', img:'/images/renos.png', desc: 'En interaktiv resa mot hållbar sjukvård' },
+  { title: 'Projektarbete', img:'/images/socmed.png', desc: 'App för att uppmuntra ...' },
+  { title: 'KmCH.SE', img:'/images/kmch.png', desc: 'Kort beskrivning av projekt 2' },
+  { title: 'ChargePlanner', img:'/images/chargePlanner.png', desc: 'information om projekt tre' },
 ]
 
 export default function Carousel(){
