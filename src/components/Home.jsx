@@ -10,8 +10,7 @@ export default function Home(){
             <div className="intro">
               <h1>Hi! I'm <span>Matilda Pallin</span> 👋</h1>
               <p>
-                Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
-                ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+                I´m an aspiring Full-Stack Developer with experience in frontend, backend, and a strong passion for UX/UI.
               </p>
               <div className="connect">
                 <a href="mailto:matilda.pallin98@gmail.com" className="connect-btn">Contact me</a>
@@ -70,7 +69,9 @@ export default function Home(){
       I thrive in dynamic environments and look forward to contributing with my knowledge, energy, and dedication.
             </p>
             <div className="about-card-socials">
-              <span>https://matildapallin.netlify.app</span>
+              <a href="https://matildapallin.netlify.app" target="_blank" rel="noopener noreferrer">
+                  My portfolio
+                </a>
               <div className="icon-linkedin">
                 <a href="https://www.linkedin.com/in/matilda-pallin-a3b1b1266/" target="_blank" rel="noreferrer">
                   <img src="/images/LinkedIn-Logo.wine.svg" alt="LinkedIn" />
@@ -127,7 +128,10 @@ export default function Home(){
           <div className="recent-project-container">
             <div className="recent-project-info">
               <h3>BuildSim Nordic 2026</h3>
-              <p>Helped Ibpsa Nordic create a website for their annual conference...</p>
+              <p>Developed and designed the website for IBPSA Nordic’s annual conference entirely from scratch using WordPress. The project included structuring content,
+                 customizing the design to match the organization’s branding, 
+                 and creating an intuitive, user-friendly interface. 
+                 Focus was placed on responsive design to ensure a seamless experience across devices, providing valuable experience in both frontend design and backend configuration within WordPress.</p>
             </div>
             <div className="recent-project-image">
               <img src="/images/Device-MacbookPro.png" alt="Mockup" />

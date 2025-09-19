@@ -1,10 +1,12 @@
 import React, { useRef, useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const projects = [
-  { title: 'Renos AB', img:'/images/renos.png', desc: 'En interaktiv resa mot hållbar sjukvård' },
-  { title: 'Projektarbete', img:'/images/socmed.png', desc: 'App för att uppmuntra ...' },
-  { title: 'KmCH.SE', img:'/images/kmch.png', desc: 'Kort beskrivning av projekt 2' },
-  { title: 'ChargePlanner', img:'/images/chargePlanner.png', desc: 'information om projekt tre' },
+  { title: 'ChaptR', img:'/images/chaptr.png', desc: 'Developed an Android app for logging progress with reading books'},
+  { title: 'KmCH.SE', img:'/images/kmch.png', desc: 'Created a logo and webdesign for a non-profit' },
+  { title: 'Renos AB', img:'/images/renos.png', desc: 'School projects where we created a website and logo for Renos AB' },
+  { title: 'School project', img:'/images/socialamedier.png', desc: 'Designed an application used to promote renewables in Western Australia' },
+  { title: 'ChargePlanner', img:'/images/chargePlanner.png', desc: 'School project, desgined an application for electric cars' },
 ]
 
 export default function Carousel(){
@@ -36,7 +38,7 @@ export default function Carousel(){
       <div className="carousel-container">
         <div className="carousel-track" ref={trackRef}>
           {projects.map((p,i) => (
-            <div className="more-projects-about-card" key={i}>
+            <Link to="/projects" key={i} className="more-projects-about-card">
               <div className="more-projects-card-content">
                 <img src={p.img} alt={p.title} />
                 <div>
@@ -44,7 +46,7 @@ export default function Carousel(){
                   <p>{p.desc}</p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -52,3 +54,4 @@ export default function Carousel(){
     </div>
   )
 }
+

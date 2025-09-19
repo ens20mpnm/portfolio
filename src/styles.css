@@ -118,6 +118,8 @@ body {
  margin: 1rem 0;
  max-width: 500px;
  color: #fff;
+ font-weight: 500;
+ font-size: large;
 }
 
 .intro{
@@ -262,6 +264,12 @@ body {
    align-items: center;
 }
 
+.about-card-socials a{
+  color: #4a6fa1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .experience {
  padding: 2rem;
 }
@@ -295,6 +303,7 @@ body {
  font-size: 0.75rem;
  margin-top: 0.4rem;
  margin-bottom:0.4rem;
+ margin-left: 1rem;
 }
 
 .fulltime { font-weight:300; background: #f5446d;; color: white; }
@@ -411,6 +420,7 @@ background-color: #2B4735;
  gap: 1rem;
  align-items: center;
  max-height: 300px;
+ 
 }
 
 .more-projects-about-card img {
@@ -434,6 +444,8 @@ background-color: #2B4735;
  justify-content: space-between;
  padding: 1rem;
  box-sizing: border-box;
+ text-decoration: none;
+ color: black;
 }
 
 .carousel-btn {
@@ -583,6 +595,11 @@ background-color: #2B4735;
 
 /*Style for projects.html*/
 
+.project{
+  background-color:#2B4735;
+  padding: 20px;
+}
+
 .project-container {
   display: flex;
   justify-content: space-evenly;
@@ -594,6 +611,7 @@ background-color: #2B4735;
   flex-direction: row;
   align-content: flex-start;
   margin:2rem 6rem ;
+  
   
 }
 
@@ -618,7 +636,7 @@ background-color: #2B4735;
  max-width: 420px;
 }
 .project-images img {
- max-width: 80px;
+ max-width: 420px;
 }
 
 .project h2 {
@@ -626,8 +644,221 @@ background-color: #2B4735;
  font-weight: 700;
  margin-bottom: 1rem;
 }
-@media (max-width: 900px) {
- .about-work {
-   grid-template-columns: 1fr;
- }
+
+  /* --- MOBILANPASSNING (max-width: 900px) --- */
+@media (max-width: 1012px) {
+
+  /* --- Header --- */
+  .header {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .intro {
+    padding: 0;
+  }
+
+  .big-profile-pic {
+    padding: 1rem 0;
+  }
+
+  .big-profile-pic img {
+    width: 200px;
+  }
+
+  .connect-btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* --- Navbar --- */
+  .nav-links { display: none; } /* desktop links döljs */
+  .nav-avatar { display: none; } /* avatar döljs */
+  
+   .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;               /* högerhörn */
+    z-index: 200;              /* ovanpå andra element */
+  }
+
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+  }
+
+  /* Modal meny */
+  .menu-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;            /* hela viewportens bredd */
+  height: 100vh;           /* hela viewportens höjd */
+  background-color: rgba(0, 0, 0, 0.8); /* mörkare overlay för tydlighet */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
+
+.menu-content {
+  width: 100%;             /* tar hela bredden */
+  height: 100%;            /* tar hela höjden */
+  background-color: #febfffe1; /* valfri färg/transparens */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;              /* padding tas bort så den fyller hela skärmen */
+  border-radius: 0;        /* tar bort rundade hörn */
+}
+
+.menu-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-content li {
+  margin: 2rem 0;          /* mer mellanrum mellan länkar */
+}
+
+.menu-content li a {
+  color: white;
+  font-size: 2rem;         /* större länkar för mobil */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-content li a:hover {
+  color: #f5446d;
+}
+
+
+  /* --- About & Experience --- */
+  .about-section {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    margin-top: -50px;
+  }
+
+  .about-card, .experience {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  /* --- Recent Projects & Projects --- */
+  .recent-project-container,
+  .project-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .recent-project-info, .project-info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .recent-project-image img,
+  .project-image img,
+  .project-images img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel-container {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .more-projects-about-card {
+    flex: 0 0 auto;
+    min-width: 250px;
+  }
+
+  .carousel-btn { display: none; } /* tar bort pilar */
+
+  /* --- Skills sektion --- */
+  .skills {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 1rem 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* --- Contact sektion --- */
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  .contact-card-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+ .skills {
+    overflow-x: auto;       /* gör den scrollbar horisontellt */
+    flex-wrap: nowrap;      /* inga radbrytningar */
+    gap: 1rem;
+    padding: 1rem 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* --- More Projects / Carousel --- */
+  .carousel-container {
+    overflow-x: auto;       /* horisontell scroll */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .more-projects-about-card {
+    flex: 0 0 auto;         /* förhindrar att korten krymper */
+    min-width: 250px;
+  }
+
+  .carousel-btn {
+    display: none;          /* tar bort pilarna på mobil */
+  }
+
+}
+
