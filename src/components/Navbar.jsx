@@ -34,6 +34,9 @@ export default function Navbar() {
           <li>
             <NavLink to="/projects" className={({isActive}) => isActive ? 'active' : ''}>PROJECTS</NavLink>
           </li>
+          <li>
+            <NavLink to="/ProjektDagbok" className={({isActive}) => isActive ? 'active' : ''}>PROJECTS</NavLink>
+          </li>
         </ul>
       </div>
 
@@ -50,6 +53,9 @@ export default function Navbar() {
               </li>
               <li>
                 <NavLink to="/projects" onClick={() => setMenuOpen(false)}>PROJECTS</NavLink>
+              </li>
+              <li>
+                <NavLink to="/ProjektDagbok" className={({isActive}) => isActive ? 'active' : ''}>PROJECTS</NavLink>
               </li>
             </ul>
           </div>
