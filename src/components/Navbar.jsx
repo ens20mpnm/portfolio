@@ -35,7 +35,7 @@ export default function Navbar() {
             <NavLink to="/projects" className={({isActive}) => isActive ? 'active' : ''}>PROJECTS</NavLink>
           </li>
           <li>
-            <NavLink to="/ProjektDagbok" className={({isActive}) => isActive ? 'active' : ''}>PROJECTS</NavLink>
+            <NavLink to="/ProjektDagbok" className={({isActive}) => isActive ? 'active' : ''}>ProjektDagbok</NavLink>
           </li>
         </ul>
       </div>
@@ -55,7 +55,7 @@ export default function Navbar() {
                 <NavLink to="/projects" onClick={() => setMenuOpen(false)}>PROJECTS</NavLink>
               </li>
               <li>
-                <NavLink to="/ProjektDagbok" className={({isActive}) => isActive ? 'active' : ''}>PROJECTS</NavLink>
+                <NavLink to="/ProjektDagbok" className={({isActive}) => isActive ? 'active' : ''}>ProjektDagbok</NavLink>
               </li>
             </ul>
           </div>
